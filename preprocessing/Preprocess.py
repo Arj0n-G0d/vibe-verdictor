@@ -15,8 +15,7 @@ def PreprocessDatasets(FolderPath) :  # Define a function called PreprocessDatas
 
     final_dataset.reset_index(drop=True, inplace=True)  # Reset the index of the final dataset and modify it in place
     final_dataset.dropna(inplace=True)  # Drop any rows with missing values from the final dataset
-    sentiment = final_dataset.pop("sentiment")  # Remove the 'sentiment' column from the final dataset and store it separately
-    for i in range(len(sentiment)) :  # Iterate over each sentiment value
-        sentiment[i] = sentiment[i].lower()  # Convert the sentiment value to lowercase
+    sentiment = final_dataset.pop("sentiment") # Remove the 'sentiment' column from the final dataset and store it separately
+    sentiment.str.lower() # Converting all strings in sentiment to lowercase
     final_dataset.insert(1, "sentiment", sentiment)  # Insert the modified 'sentiment' column back into the final dataset
     return final_dataset  # Return the preprocessed final dataset
