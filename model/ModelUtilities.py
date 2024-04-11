@@ -7,7 +7,7 @@ from sklearn import svm
 # Import the pickle module for saving and loading models
 import pickle  
 
-# TrainModel() creates a Linear SVM model and fits it on the datasets present at path DatasetPath 
+# TrainModel() creates a Linear SVC model and fits it on the datasets present at path DatasetPath 
 def TrainModel(DatasetPath):
     # Create a Support Vector Machine classifier with a linear kernel and C=1.0
     classifier = svm.SVC(kernel="linear", C=1.0)
