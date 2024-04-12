@@ -10,14 +10,14 @@ from sklearn import svm
 import pickle  
 
 # SaveModel() makes pickle of the Model passed to it
-def SaveModel(Model):
+def SaveModel(Model) :
     # Open a file named "pickle/Model.pkl" in binary write mode
     with open("pickle/Model.pkl", "wb") as file:
         # Serialize and save the Model to the file
         pickle.dump(Model, file)
 
 # LoadModel() loads the Model present in file "pickle/Model.pkl" and returns it's data members
-def LoadModel():
+def LoadModel() :
     # Open the file "pickle/Model.pkl" in binary read mode
     with open("pickle/Model.pkl", "rb") as file:
         # Deserialize and load the model from the file
@@ -25,7 +25,7 @@ def LoadModel():
     # Return the loaded model's data members
     return model.Model, model.Vectorizer, model.Accuracy
 
-class Model:
+class Model :
     def __init__(self, ModelType="pretrained", DatasetPath="dataset"):
         # Load a pretrained model if ModelType is "pretrained"
         if ModelType == "pretrained":
