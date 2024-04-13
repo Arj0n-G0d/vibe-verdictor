@@ -13,7 +13,7 @@ Vibe Verdictor is a text sentiment analyzer that classifies input text as having
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/this_dot_god/vibe-verdictor.git`
+1. Clone the repository: `git clone https://github.com/this-dot-god/vibe-verdictor.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the app: `streamlit run app.py`
 
