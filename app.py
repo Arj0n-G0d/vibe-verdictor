@@ -23,4 +23,4 @@ if text != "" :
     st.markdown(f"You have been verdicted of having {prediction} vibes!!")
 
 # Display a footer message
-st.markdown("Made with :heart: by this_dot_god")
+st.markdown("Made with :heart: by Arj0n.G0d")
