@@ -25,8 +25,6 @@ Vibe Verdictor is a text sentiment analyzer that classifies input text as having
 ## Demo
 
 ### Home
-
-### Home
 ![Demo Image 1](demo_images/home.png)
 
 ### Positive Vibes
